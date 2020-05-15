@@ -31,5 +31,13 @@ kotlin {
                 implementation kotlin('test-annotations-common')
             }
         }
+        jsMain.dependencies {
+            implementation kotlin('stdlib-js')
+        }
+        jsTest {
+            dependencies {
+                implementation kotlin('test-js')
+            }
+        }
     }
 }
